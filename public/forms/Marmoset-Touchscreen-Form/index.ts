@@ -8,7 +8,7 @@ const { z } = await import("/runtime/v1/zod@3.23.x/index.js");
 export default defineInstrument({
   kind: "FORM",
   language: "en",
-  tags: ["marmoset, Touchscreen", "PVD", "5-choice"],
+  tags: ["Marmoset", "Touchscreen", "PVD", "5-choice"],
   internal: {
     edition: 1,
     name: "MARMOSET_TOUCHSCREEN_FORM",
