@@ -552,7 +552,7 @@ export default defineInstrument({
       visibility: "visible",
       ref: "dexUsed"
     },
-    dexAdjusttedFromSOP: {
+    dexAdjustedFromSOP: {
       kind: "const",
       visibility: "visible",
       ref: "dexAdjustedFromSOP"
