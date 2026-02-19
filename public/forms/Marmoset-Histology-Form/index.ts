@@ -241,7 +241,7 @@ export default defineInstrument({
   clientDetails: {
     estimatedDuration: 3,
     instructions: [
-      "Please fill out this form whenever a Immunofluorescence or Immunohistochemistry task is done upon samples of an animal subject. In order to fill out the form the user must know which antibodies were used, if the sample was stained and if so the stain date, and how much brain tissue they used.",
+      "Please fill out this form whenever an Immunofluorescence or Immunohistochemistry task is done upon samples of an animal subject. In order to fill out the form the user must know which antibodies were used, if the sample was stained and if so the stain date, and how much brain tissue they used.",
     ],
   },
   measures: {

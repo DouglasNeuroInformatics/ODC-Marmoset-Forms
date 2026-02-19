@@ -161,7 +161,7 @@ export default defineInstrument({
     description:
       "This is a form to collect data from a marmosets touchscreen session",
     license: "Apache-2.0",
-    title: "marmoset Touchscreen form",
+    title: "Marmoset Touchscreen form",
   },
   measures: {
     experimentType: {

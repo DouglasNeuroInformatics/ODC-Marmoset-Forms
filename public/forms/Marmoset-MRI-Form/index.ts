@@ -461,7 +461,7 @@ export default defineInstrument({
                     label: "State of the animal",
                     variant:"select",
                     options: {
-                      "Attentative": "Attentative",
+                      "Attentive": "Attentive",
                       "Sleeping": "Sleeping"
                     }
                   }
@@ -491,7 +491,7 @@ export default defineInstrument({
   details: {
     description: "To record information about a marmoset's MRI scan session. Keeps track of multiple scans within a single session. Can be filled in by either MRI operator or scan requester.",
     license: 'Apache-2.0',
-    title: 'marmoset MRI Form'
+    title: 'Marmoset MRI Form'
   },
   measures: {
     mriOperatorName: {
@@ -681,7 +681,7 @@ export default defineInstrument({
       oxygenSaturation: z.number().min(0).max(100).optional(),
       respirationRate: z.number().min(0).max(350).optional(),
       formOfMeasurement: z.enum(['Waveform', 'Numerical', 'Manual']).optional(),
-      stateOfAnimal: z.enum(["Sleeping", "Attentative"]).optional(),
+      stateOfAnimal: z.enum(["Sleeping", "Attentive"]).optional(),
       otherComments: z.string().optional()
 
     })),

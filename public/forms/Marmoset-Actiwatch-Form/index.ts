@@ -31,7 +31,7 @@ export default defineInstrument({
     wasMultipleDaySession: {
       kind: "boolean",
       variant: "radio",
-      label: "Did the session span multiple days"
+      label: "Did the session span multiple days?"
     },
     sessionStartDate: {
       kind: 'dynamic',
@@ -48,7 +48,7 @@ export default defineInstrument({
     wasSleepTracked: {
       kind: "boolean",
       variant: "radio",
-      label: "Did the marmoset sleep during the session"
+      label: "Did the Marmoset sleep during the session?"
     },
     additionalComments: {
       kind: "string",
@@ -105,7 +105,7 @@ export default defineInstrument({
   validationSchema: z.object({
     actiwatchId: z.string(),
     roomNumber: z.string(),
-    epochDuration: z.number().min(0),
+    epochDuration: z.number().min(1),
     wasMultipleDaySession: z.boolean(),
     sessionStartDate: z.date().optional(),
     wasSleepTracked: z.boolean(),
