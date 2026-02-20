@@ -43,6 +43,7 @@ export default defineInstrument({
             label: "Please enter the date the session started"
           }
         }
+        return null
       }
     },
     wasSleepTracked: {
