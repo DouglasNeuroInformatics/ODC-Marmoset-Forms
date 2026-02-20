@@ -178,11 +178,9 @@ export default defineInstrument({
             variant: 'select',
             label: 'Mother marmoset strain (optional)',
             options: {
-              "M83": "M83",
-              "C57BL/6J": "C57BL/6J",
-              "5XFAD": "5XFAD",
-              "3xTG-AD": "3xTG-AD",
-              "Other":"Other"
+               "Pygmy": "Pygmy",
+               "Atlantic Forest": "Atlantic Forest",
+               "Other":"Other"
             }
           }
         }
@@ -268,10 +266,8 @@ export default defineInstrument({
             variant: 'select',
             label: 'Father marmoset strain (optional)',
             options: {
-              "M83": "M83",
-              "C57BL/6J": "C57BL/6J",
-              "5XFAD": "5XFAD",
-              "3xTG-AD": "3xTG-AD",
+              "Pygmy": "Pygmy",
+              "Atlantic Forest": "Atlantic Forest",
               "Other":"Other"
             }
           }
@@ -493,6 +489,11 @@ export default defineInstrument({
     visibility: 'visible',
     ref: 'fatherMarmosetGenotypeOther'
   },
+  roomNumber: {
+    kind: "const",
+    visibility: 'visible',
+    ref: "roomNumber"
+  },
   generationNumber: {
     kind: 'const',
     visibility: 'visible',
@@ -510,10 +511,8 @@ export default defineInstrument({
   cohortId: z.string().optional(),
   externalBreederMarmoset: z.boolean(),
   marmosetStrain: z.enum([
-    'M83',
-    'C57BL/6J',
-    '5XFAD',
-    '3xTG-AD',
+      "Pygmy",
+    "Atlantic Forest",
     'Other'
   ]),
   otherStrain: z.string().optional(),
@@ -530,10 +529,8 @@ export default defineInstrument({
   motherKnown: z.boolean(),
   motherMarmoset: z.string().optional(),
   motherMarmosetStrain: z.enum([
-    'M83',
-    'C57BL/6J',
-    '5XFAD',
-    '3xTG-AD',
+    "Pygmy",
+    "Atlantic Forest",
     'Other'
   ]).optional(),
   motherMarmosetOtherStrain: z.string().optional(),
