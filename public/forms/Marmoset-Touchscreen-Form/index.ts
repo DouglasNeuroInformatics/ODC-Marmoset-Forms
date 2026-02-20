@@ -97,8 +97,10 @@ export default defineInstrument({
       variant: "select",
       label: "Reward used",
       options: {
-        "Marshmellow": "Marshmellow",
+        "Marshmallow": "Marshmallow",
         "Sugar": "Sugar",
+        "Mealworm": "Mealworm",
+        "Yogurt chips": "Yogurt chips",
         "Other": "Other"
       }
     },
@@ -154,12 +156,12 @@ export default defineInstrument({
   clientDetails: {
     estimatedDuration: 2,
     instructions: [
-      "Please answer the forms questions as accurately as possible, this form is meant be filled in per marmoset used",
+       "Please answer the form's questions as accurately as possible, this form is meant to be filled in per Marmoset used"
     ],
   },
   details: {
     description:
-      "This is a form to collect data from a marmosets touchscreen session",
+      "This is a form to collect data from a Marmoset's touchscreen session",
     license: "Apache-2.0",
     title: "Marmoset Touchscreen form",
   },
@@ -243,7 +245,7 @@ export default defineInstrument({
       .optional(),
     chamberNumber: z.number().min(0),
     chamberSerialCode: z.string(),
-    rewardUsed: z.enum(["Marshmellow", "Sugar", "Other"]),
+    rewardUsed: z.enum(["Marshmallow", "Sugar", "Mealworm","Yogurt chips", "Other"]),
     rewardOther: z.string().optional(),
     foodGiven: z.number().min(0).max(100),
     trialFailed: z.boolean(),
