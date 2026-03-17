@@ -1,0 +1,29 @@
+name: Auto-generate README Links
+on:
+  push:
+    paths:
+      - 'public/forms/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install lz-string
+
+      - name: Update README
+        run: node .github/scripts/generate-links.js
+
+      - name: Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update playground links [skip ci]"
+          file_pattern: 'README.md'
