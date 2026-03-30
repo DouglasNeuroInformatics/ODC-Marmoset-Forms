@@ -23,7 +23,22 @@ export default defineInstrument({
       label: "Kind of scale",
       options: {
         "Portable": "Small portable",
-        "Regular": "Regular"
+        "Regular": "Regular",
+        "Other": "Other"
+      }
+    },
+    scaleOther: {
+      kind: 'dynamic',
+      deps: ['scaleKind'],
+      render(data) {
+        if(data.scaleKind === "Other") {
+          return {
+            kind: 'string',
+            variant: 'input',
+            label: 'Other scale type'
+          }
+        }
+        return null
       }
     },
     additionalComments: {
@@ -53,6 +68,11 @@ export default defineInstrument({
       visibility: 'visible',
       ref: "scaleKind"
     },
+    scaleOther: {
+      kind: "const",
+      visibility: 'visible',
+      ref: "scaleOther"
+    },
     additionalComments: {
       kind: 'const',
       visibility: 'visible',
@@ -62,7 +82,8 @@ export default defineInstrument({
   },
   validationSchema: z.object({
     marmosetWeight: z.number().min(1).max(380),
-    scaleKind: z.enum(["Portable","Regular"]),
+    scaleKind: z.enum(["Portable","Regular", "Other"]),
+    scaleOther: z.string().optional(),
     additionalComments: z.string().optional()
   })
 });
