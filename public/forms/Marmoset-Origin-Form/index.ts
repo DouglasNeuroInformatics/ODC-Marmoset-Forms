@@ -343,7 +343,7 @@ export default defineInstrument({
     generationNumber: {
       kind: 'number',
       variant: 'input',
-      label: 'N-generation of marmoset'
+      label: 'N-generation of marmoset (optional)'
     },
     additionalComments: {
       kind: "string",
@@ -568,7 +568,7 @@ export default defineInstrument({
   ]).optional(),
   otherBreederOrigin: z.string().optional(),
   roomNumber: z.string().optional(),
-  generationNumber: z.number().min(0).int(),
+  generationNumber: z.number().min(0).int().optional(),
   additionalComments: z.string().optional()
 })
 });
