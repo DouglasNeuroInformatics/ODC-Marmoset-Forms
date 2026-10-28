@@ -1,4 +1,16 @@
-# ODC-Marmoset-Forms
+# Welcome To The Marmoset ODC Repository!
+
+## What is the MarmosetODC
+
+The marmoset ODC is an application to help actively collect meta data from animal studies and experiments through the use of web app forms. It is a rendition of the DNP's OpenDataCapture web application. This current repository contains the code for all forms to be used within the application.
+
+The MarmosetODC website and its forms were produced through a collaboration between the [TRIDENT](https://www.tridentpreclinicaltrials.org/) Data Management and Sharing Core team and the Marmoset Core team.
+
+## Entering the MarmosetODC
+
+After requesting account to be created with your group admin, you can log in and access the MarmosetODC [here](https://marmosetodc.douglasneuroinformatics.ca/auth/login). Note that this instance of the website is for official marmoset experiment data only.
+
+## ODC-Marmoset-Forms
 A repository containing Marmoset experiment forms to be used in a Marmoset OpenDataCapture instance.
 
 
@@ -25,3 +37,65 @@ A repository containing Marmoset experiment forms to be used in a Marmoset OpenD
 * [**Marmoset-Weight-Form**](https://playground.opendatacapture.org/?files=NobwRAdghgtgpmAXGAlhAJnAHgOgC4DOYANGAMYD2Eec1SYA9AFQAEcBANmngLTooEoAIw5wWABzgAnAGZwyeFFQF4GBClN4UhAK3mEWTBgB0IpyhAJ4WIFphlo4ASUt4pAV3jUWAXxYBeFigAdygUaxQYcQ08AAoAcgYPaki4BgA3AEYGAAEKSQwoPCgyKHE8dyk05MV4HkoqhjRMXB0CeIBKAG5zKisbFgAvXwCg0PCWSOjNBKT3FPgM7MGKdByAZhwAJk2sJoxsHDbOnrMIbGnreyh3Diu4B3OXKw8vOJBTFhYAa2bEFniADEAPIAJQAsvFiJ8WBwoBAAObuKAIuD-eK0KEw4oIgj-YDxcFQKQwCgEOB4KEAgDqcBQCIAFpTiACAMqlUTxAC60IgX240mgHH%2BHz5XzY-EUVH%2BW154pY0Hg6PBAEEIcDWQBRAAqAH1qZqnABxAASepBEPiMJ8cpYFho1BFMK%2BMGJpPJeFp9KZTrF8t%2BGHREE8QmkWL94vSxJQ8Lw6LQ4nczOd4rhoeFNLpjOsFBkLFdJLJFJYsTQLARUlgBA6VojNpTBA5cAA0n8bCmvgH0OiXmgEeH5V8o1IY46AeTRAoB4O03AM8YwK2MCxcyxG1BRAvbfL8lLLL7B%2BKFwAFGLCTdIFgL1mujgcCRnkRwLcdo9gUFwJFwqQL-4Lj9fsSL4RvKC7AngDLSL%2BV5gOBkE-mAr4%2BCm9YRuuohwdIB6Dl26LoAAnoqKBkNO8qYOIeIsAS6Ets03LbuKVQHFIsToEUUAdO2IHiigMisexOA0Uu6ABP4gRgRBUFgJxoqHvKVQVFIfKyXJ-ptvEvaIqRqksMOo5xgCCZJtpqmzhm8SYVIa5NiweD4ZItY6b4r5fMh3FfAplR8sGd5IShDFQOgkpKEKADCFAwG8lEqWpgYwZpCLAYeemxn%2BYA0FgxRVFASUzsIc5pSqQXhCFG4sOFkW0IQC4odatpkFwVUACIUmEHDRSm7C1EUcDoE1lRFCF-yZAxaAvO4CghZRBLahQLChiwDh3r1kx8sEkHnOk0i2ZBQQQJEZUCCwwRZpB6A4CwTgRAQbBYJICgrXgc3fBAFDBMdDJFLZ9liKuNGTDd7jkiJsSXOeYjpAQF2vRAPBg0%2BnFQDdJ13kEN3hDd5IjmVlCYBdV0A0E7VzUjBCeI9n3WOIUj5NtJ3en2Eg009lD3kdMgUHeb29dydUwpgxQoO12FfJgjYjuUQ0Aiqi0aDAtlzW4JTfHY7GLTT8vrbQcBbVZ8J7QdbPI6dvU4NpXBkLQ5Loiq4glJBPBbDgAAM2mKHgojKm6RbWF62YsICcuOb4trwEjlTsCL%2Bbex6fs%2Blxh64QCFhWCZsL5eZBbusW9PZmn6QCCgQhC%2BE%2BHogXBBF5yDEeQ86JZz7ceUv5DZNsJUedm2C4p3guXyhXRcl3Z5eF0%2BadVDIaVCc0NV1gxNGWR3Pxd%2BQfS9yQr4D8XXDDwCW-V6%2BE9T02lmz-KqHyoFwVUBuFVRUvSfxD3%2Bej0PZd76PB-cUfAJXyVN8cDvlVdotUziuVtFGLgbE9zskgq6f4gwcDaD0AoWIMVo6FljqdAyiDgwwFDCxDoOAYBoFiJkIhrosCxHWAADmdh0eebc2yINoJ4WIwATyPgvNCd8n5bhARIDBU%2BYAuQMNbhuOAi8hiCTcH2WIRDdylQ4PIgKxU9y3wivfaRCV5FIMlgA%2BR1oOimB8N0UwYAfBciAA&label=LIQwTgtg9gzgpgFwLQHU4EsDmALZAxKSIA) 
 
 <!-- FORMS_END -->
+
+## Running the Form Viewer Locally
+
+The form viewer contains the most up to date forms for each marmoset experiment. The form viewer can be run with the following steps. In order to run the form viewer locally one must have Node installed, which can be installed and managed with [Node Version Manger](https://github.com/nvm-sh/nvm).
+
+1. Installing and activating pnpm package manager
+
+    Pnpm can be activated after a node version is selected, which is done with the following command
+    ```
+    nvm install --lts
+    ```
+    To activate pnpm use the command below
+    ```
+    corepack enable
+    ```
+2. Install packages
+
+    ```
+    pnpm install
+    ```
+3. Run Localhost instance with this command
+
+    ```
+    pnpm dev
+    ```
+4. Access the form links on locally hosted web page
+
+    Links to the forms are now accessible on the local webpage, which is hosted on http://localhost:5173/ by default
+
+## Having issues?
+
+If you encounter a bug or problem when using the MarmosetODC please refer to the following steps
+
+If it's a bug with the system itself (i.e. website crash or error), an issue can be created on the ODC repository website [here](https://github.com/DouglasNeuroInformatics/OpenDataCapture/issues/new?template=bug.yaml)
+
+ - Add the cause of the error in the title section of the issue (ex: Submitting form X crashed website)
+ - Add the reason for crash/behavior in the current behavior section
+ - Describe what the expected behavior of your problem should be (ex: form X should submit successfully)
+ - select browser you used with the dropdown
+ - Describe steps you took to encounter the error in the "Steps to reproduce section"
+
+If it is an issue or suggestion for a MarmosetODC form, please make an issue for it on the MarmosetODC repository by clicking this [link](https://github.com/DouglasNeuroInformatics/ODC-Marmoset-Forms/issues/new) and doing the following:
+
+ - Add the name of form you like to change within the issue title
+ - Describe the changes you would to have added to the form in the description section of the issue
+ - Click the create button to submit the issue to the repository
+
+## Request Changes to ODC entries
+
+If you would like to delete or update a previous record or subject within your ODC instance please follow these steps:
+
+ 1. Contact your ODC admin
+ 2. State subject Id or record you would like to have updated or deleted
+ 3. If you would like the record entry/subject Id to be updated provide what you would like the content to be updated to
+ 4. State how you will resolve this issue in the future to reduce reoccurrence
+
+## Useful links
+
+- [OpenDataCapture Website](https://opendatacapture.org/en/)
+- [Upload Data Documentation](https://opendatacapture.org/en/docs/guides/how-to-upload-data/)
+- [Form Creation Playground](https://playground.opendatacapture.org/)
+- [TRIDENT Preclinical Trials Website](https://www.tridentpreclinicaltrials.org/)
