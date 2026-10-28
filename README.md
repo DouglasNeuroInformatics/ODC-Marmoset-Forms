@@ -4,6 +4,8 @@
 
 The marmoset ODC is an application to help actively collect meta data from animal studies and experiments through the use of web app forms. It is a rendition of the DNP's OpenDataCapture web application. This current repository contains the code for all forms to be used within the application.
 
+The MarmosetODC website and its forms were produced through a collaboration between the [TRIDENT](https://www.tridentpreclinicaltrials.org/) Data Management and Sharing Core team and the Marmoset Core team.
+
 ## Entering the MarmosetODC
 
 After requesting account to be created with your group admin, you can log in and access the MarmosetODC [here](https://marmosetodc.douglasneuroinformatics.ca/auth/login). Note that this instance of the website is for official marmoset experiment data only.
